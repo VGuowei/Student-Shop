@@ -203,7 +203,7 @@ html, body{
     border: 1px solid #34516C;
     font-weight: bold;
 }
-#cart-added{
+#cart-added .addedRow{
     display: grid;
     grid-template-columns: 22% 25% 35% 18%;
     background-color: ghostwhite;
