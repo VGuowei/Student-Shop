@@ -237,6 +237,9 @@ html, body{
     background-color: #BE1622;
     color: #C7CBDA;
 }
+.costCol{
+    text-align: center;
+}
 
 
 
@@ -251,6 +254,79 @@ html, body{
 
 
 /*---[ register ]---*/
+.main-register{
+    background-color: #fff;
+    margin:0 auto;
+    max-width:800px;
+    min-height:63%;
+}
+.main-register h1 {
+    background-color: #34516C;
+    color:#fff;
+    margin: 0;
+    padding: 40px 80px;
+}
+.registerForm{
+    min-width: 60%;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: left;
+}
+.bgColor{
+    background-color: #f3f3fe;
+}
+.inputField{
+    border: 1px solid #b8bdc9;
+    min-width: 100%;
+    height: 2.5em;
+    padding: 0 6px;
+    margin: 8px 0 20px 0;
+}
+.submitBtn{
+    min-width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.centerForm{
+    display: block;
+    text-align: center;
+}
+.costCol button{
+    margin-top: 10px;
+}
+/****************************************************************************************
+Code from W3school Link: https://www.w3schools.com/howto/howto_js_password_validation.asp
+*****************************************************************************************/
+#pswReq{
+    display:none;
+    background-color: #f3f3fe;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+#pswReq p{
+    padding: 10px 35px;
+    font-size: 18px;
+}
+.valid {
+    color: green;
+}
+
+.valid:before{
+    position: relative;
+    left: -35px;
+    content: "✔";
+}
+.invalid {
+    color: red;
+}
+.invalid:before{
+    position: relative;
+    left: -35px;
+    content: "✖";
+}
+
 
 
 
@@ -260,24 +336,12 @@ html, body{
 /*View point for tablets*/
 @media only screen and (max-width: 1200px){
 
-    /*---all pages---*/
+    /*---[ All Pages ]---*/
     .Header{
        height: 12%;
     }
     .footer{
 
-    }
-    .main-home{
-        min-height: 66%;
-    }
-    .main-products{
-        min-height: 66%;
-    }
-    .main-cart{
-        min-height: 66%;
-    }
-    .main-item{
-        min-height: 66%;
     }
     .Header h1{
         font-size:24px;
@@ -285,15 +349,20 @@ html, body{
     .logo{
         width: 220px;
     }
-    /*---home page---*/
+    /*---[ home ]---*/
+    .main-home{
+        min-height: 66%;
+    }
     .main-home h1{
         font-size:45px;
     }
     .main-home h3{
         font-size:24px;
     }
-
-    /*---product page---*/
+    /*---[ product ]---*/
+    .main-products{
+        min-height: 66%;
+    }
     .menuTop a{
         text-decoration:revert;
         position: relative;
@@ -308,30 +377,29 @@ html, body{
         top: 0;
         text-align: center;
     }
-
+    /*---[ cart ]---*/
+    .main-cart{
+        min-height: 66%;
+    }
+    /*---[ item ]---*/
+    .main-item{
+        min-height: 66%;
+    }
+    /*---[ register ]---*/
+    .main-register{
+        min-height: 66%;
+    }
 }
 /*View point for mobiles*/
 @media only screen and (max-width: 800px){
 
-    /*---all pages---*/
+    /*---[ All pages ]---*/
     .Header{
         padding: 10px;
         height: 7%;
     }
     .footer{
         height: 36%;
-    }
-    .main-home{
-        min-height: 57%;
-    }
-    .main-products{
-        min-height: 57%;
-    }
-    .main-cart{
-        min-height: 57%;
-    }
-    .main-item{
-        min-height: 57%;
     }
     .Header h1{
         font-size:15px;
@@ -349,8 +417,10 @@ html, body{
         font-size: small;
         grid-template-columns: 100%;
     }
-
-    /*---home page---*/
+    /*---[ home ]---*/
+    .main-home{
+        min-height: 57%;
+    }
     .main-home h1{
         font-size:30px;
     }
@@ -361,8 +431,10 @@ html, body{
         width:100%;
         height:auto;
     }
-
-    /*---product page---*/
+    /*---[ product ]---*/
+    .main-products{
+        min-height: 57%;
+    }
     .product-links {
         font-size: smaller;
     }
@@ -383,8 +455,10 @@ html, body{
     .buyButton{
         font-size: smaller;
     }
-
-    /*---cart page---*/
+    /*---[ cart ]---*/
+    .main-cart{
+        min-height: 57%;
+    }
     .main-cart h2{
         font-size: medium;
     }
@@ -405,6 +479,16 @@ html, body{
     }
     .clear button{
         font-size: xx-small;
+    }
+    .costCol button{
+        font-size: 8px;
+    }
+    /*---[ item ]---*/
+    .main-item{
+        min-height: 57%;
+    }
+    .main-register{
+        min-height: 57%;
     }
 }
 @media only screen and (max-width: 320px){

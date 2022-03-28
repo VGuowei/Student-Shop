@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="design.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<body class="bgColor">
+    <!--This is the header of the page -->
+    <header class="Header">
+        <img src="UclanLogo.png" alt="Uclan Logo" class="logo">
+        <h1>Student Shop</h1>
+        <ul class="nav-bar">
+            <li><a href="index.html" class="hyperLinks">Home</a></li>
+            <li><a href="products.html" class="hyperLinks">Products</a></li>
+            <li><a href="cart.html" class="hyperLinks">Cart</a></li>
+            <li><a href="register.html" class="hyperLinks">Sign Up</a></li>
+        </ul>
+        <div class="icon" onclick="showMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    <ul id="menu">
+        <li> <a href="index.html" class="hyperLinks">Home</a></li>
+        <li> <a href="products.html" class="hyperLinks">Products</a></li>
+        <li> <a href="cart.html" class="hyperLinks">Cart</a></li>
+    </ul>
+
+    <!--Register Form-->
+    <main class="main-register">
+        <h1>Sign Up</h1>
+        <div class="centerForm">
+            <form action="insertToDB.php" method="post" class="registerForm">
+                <p>Please fill out all required fields in order to proceed.</p>
+                <br>
+
+                <label>
+                    Full Name:<br>
+                    <input type="text" name="username" class="inputField" maxlength="26" required><br>
+                </label>
+
+                <label>
+                    Email Address:<br>
+                    <input type="email" name="" class="inputField" required><br>
+                </label>
+
+                <label>
+                    Password:<br>
+                    <input type="password" name="password" class="inputField" id="psw" maxlength="16" required><br>
+
+                </label>
+
+                <!--Password Validation from W3school-->
+                <div id="pswReq">
+                    <p style="margin-top: 0">Password must contain the following:</p>
+                    <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                    <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                    <p id="number" class="invalid">A <b>number</b></p>
+                    <p id="length" class="invalid" style="margin-bottom: 0">Minimum <b>8 characters</b></p>
+                </div>
+
+                <label>
+                    Confirm Password:<br>
+                    <input type="password" name="" class="inputField" maxlength="16" required><br>
+                </label>
+
+                <label>
+                    Address:<br>
+                    <input type="text" name="" class="inputField" maxlength="120" required><br>
+                </label>
+
+                <input type="Submit" name="Login" class="submitBtn">
+            </form>
+        </div>
+    </main>
+
+    <!--This is the footer of the page-->
+    <footer class="footer">
+        <div>
+            <h3>Links</h3>
+            <a href="https://www.uclansu.co.uk/" >Students' Union</a>
+        </div>
+        <div>
+            <h3>Contact</h3>
+            <p>Email: suinformation@uclan.ac.uk</p>
+            <p>Phone: 01772 89 3000</p>
+        </div>
+        <div>
+            <h3>Location</h3>
+            <p>University of Central Lancashire Students' Union.<br/>
+                Fylde Road, Preston. PR1 7BY<br/>
+                Registered in England<br/>
+                Company Number: 7623917<br/>
+                Registered Charity Number: 1142616</p>
+        </div>
+    </footer>
+
+    <script src="js/global.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>
