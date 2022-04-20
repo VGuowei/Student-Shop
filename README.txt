@@ -1,6 +1,6 @@
 -> Contain a README file outlining what web pages have been implemented and the operation of each page.
 
-
+index.html
 
 --The Header and footer are same for all pages--
 
