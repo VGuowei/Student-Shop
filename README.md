@@ -1,3 +1,3 @@
 # Student Shop
 
-The Interactive Applications module Assignment part 1 - Responsive Website (Front-end).
+The Interactive Application module Assignment part 1 - Responsive Website (Front-end).
