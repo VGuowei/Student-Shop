@@ -2,4 +2,4 @@
 
 The Interactive Application module Assignment part 1 - Responsive Website (Front-end). 
 
-Link: https://vguowei.github.io/CO1706/
+Link: https://vguowei.github.io/Student-Shop/
