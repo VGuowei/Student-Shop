@@ -838,7 +838,7 @@ for (let i=0; i<arrItems.length; i++){
 // Session storage
 function details(arrIndex){
      sessionStorage.detail=JSON.stringify(arrItems[arrIndex]); // Covert the new obj to str then store to session storage
-     window.location.href="Item.html"; // Link to Item page
+     window.location.href="item.html"; // Link to Item page
 }
 
 // Local storage
